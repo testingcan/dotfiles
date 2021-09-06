@@ -62,6 +62,7 @@ call plug#begin('~/.vim/plugged')
 
 " Color theme
 Plug 'joshdick/onedark.vim'
+Plug 'cocopon/iceberg.vim'
 
 " Plugins
 Plug 'preservim/nerdtree'
@@ -82,7 +83,7 @@ set encoding=UTF-8
 
 call plug#end()
 
-colorscheme onedark
+colorscheme iceberg
 
 " Keyboard Shortcuts
 map <C-b> :NERDTreeToggle<CR>
