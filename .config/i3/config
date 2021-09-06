@@ -63,7 +63,7 @@ set $mod Mod4
 
 # Autostart
 
-exec_always --no-startup-id $HOME/.scripts/polybar.sh
+exec_always --no-startup-id $HOME/.scripts/launch_polybar.sh
 #exec redshift -l 7.8421043:47.9990077
 #exec nm-applet
 # Font for window titles. Will also be used by the bar unless a different font
@@ -71,7 +71,7 @@ exec_always --no-startup-id $HOME/.scripts/polybar.sh
 font pango:Roboto Mono 8
 #for_window [class=".*"] title_format "<span font='Roboto Mono 8'> > %title</span>"
 
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper/waves.png
+exec --no-startup-id feh --bg-scale ~/media/wallpaper/day.jpg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -95,8 +95,9 @@ bindsym $mod+Shift+Return exec urxtv -cd "`xcwd`"
 bindsym $mod+c kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec rofi -show drun  combi -lines 5 - width 60 -padding 350 -fullscreen -fake-transparency -font "Roboto Mono 18" -separator-style "none"
-bindsym $mod+d exec rofi -show drun -theme clean
+#bindsym $mod+d exec rofi -show drun -theme clean
+bindsym $mod+d exec .config/rofi/launchers/text/launcher.sh
+bindsym $mod+x exec .config/rofi/powermenu/powermenu.sh
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
