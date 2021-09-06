@@ -1,9 +1,10 @@
 !! URxvt Appearance
-URxvt.scrollBar: 	false
-URxvt.font: 		xft:RobotoMono Nerd Font Mono:style=Retina:pixelsize=12,xft: Symbols Nerd Font:pixelsize=8
-URxvt.boldFont: 	xft:RobotoMono Nerd Font Mono:style=Bold:pixelsize=12,xft: Symbols Nerd Font:pixelsize=8
-URxvt.italicFont:	xft:RobotoMono Nerd Font Mono:style=Light:pixelsize=12,xft: Symbols Nerd Font:pixelsize=8
+URxvt.scrollBar: 	    false
+URxvt.font: 		    xft:RobotoMono Nerd Font Mono:style=Retina:pixelsize=12,xft: Symbols Nerd Font:pixelsize=8
+URxvt.boldFont: 	    xft:RobotoMono Nerd Font Mono:style=Bold:pixelsize=12,xft: Symbols Nerd Font:pixelsize=8
+URxvt.italicFont:	    xft:RobotoMono Nerd Font Mono:style=Light:pixelsize=12,xft: Symbols Nerd Font:pixelsize=8
 URxvt.internalBorder:	8
+URxvt.cursorBlink:      true
 !
 ! special
 *.foreground:   #ABB2BF
