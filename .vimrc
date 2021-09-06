@@ -78,6 +78,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-python/python-syntax'
 Plug 'Xuyuanp/scrollbar.nvim'
 Plug 'vimlab/split-term.vim'
+Plug 'dense-analysis/ale'
 
 set encoding=UTF-8
 
@@ -127,3 +128,10 @@ augroup end
 set mouse+=a
 set splitright
 set splitbelow
+
+" ALE
+let g:ale_linters={'python': ['pylint']}
+let g:ale_fixers={'python': ['black']}
+let g:ale_python_auto_pipenv=1
+let g:ale_python_pylent_auto_pipenv=1
+let g:ale_python_black_auto_pipenv=1
