@@ -23,6 +23,7 @@ focus_follows_mouse no
 ################################################################################
 #				Windows					       #
 ################################################################################
+smart_gaps on
 gaps inner 10
 gaps outer 10
 
@@ -40,6 +41,7 @@ bindsym $mod+g mode "Gaps"
 
 for_window [class="Obshutdown"] fullscreen
 for_window [class=".*"] border pixel $bordersize
+hide_edge_borders both
 
 # Color variables
 # ======
