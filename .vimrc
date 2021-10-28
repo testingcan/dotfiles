@@ -79,6 +79,8 @@ Plug 'vim-python/python-syntax'
 Plug 'Xuyuanp/scrollbar.nvim'
 Plug 'vimlab/split-term.vim'
 Plug 'dense-analysis/ale'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
+
 
 set encoding=UTF-8
 
@@ -135,3 +137,4 @@ let g:ale_fixers={'python': ['black']}
 let g:ale_python_auto_pipenv=1
 let g:ale_python_pylent_auto_pipenv=1
 let g:ale_python_black_auto_pipenv=1
+
